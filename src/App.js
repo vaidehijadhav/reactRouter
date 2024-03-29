@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Support from './components/Support';
 import About from './components/About';
-import Labs from './components/labs';
+import Lab1 from './components/Lab1';
 import NotFound from './components/NotFound';
 
 
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/support" element={<Support />} />
         <Route path="/about" element={<About />} />
-        <Route path="/labs" element={<Labs/>} />
+        <Route path="/labs" element={<Lab1/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
     </div>
