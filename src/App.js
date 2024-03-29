@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Support from './components/Support';
 import About from './components/About';
 import Labs from './components/labs';
+import NotFound from './components/NotFound';
 
 
 function App() {
