@@ -1,16 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<div>Home Page</div>} />
-        <Route path="/support" element={<div>Support Page</div>} />
-        <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/labs" element={<div>Labs Page</div>} />
-        <Route path="*" element={<div>Page Not Found</div>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/labs" element={<Labs/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
     </div>
   );
