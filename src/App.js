@@ -6,6 +6,7 @@ import About from './components/About';
 import Lab1 from './components/Lab1';
 import NotFound from './components/NotFound';
 import {Link, NavLink} from 'react-router-dom';
+import MainHeader from './components/MainHeader';
 
 
 function App() {
@@ -30,11 +31,12 @@ function App() {
       </nav>
       
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/support" element={<Support />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/labs" element={<Lab1/>} />
-        <Route path="*" element={<NotFound/>} />
+        <Route path="/" element={<MainHeader/>}>
+          <Route path="/support" element={<Support />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/labs" element={<Lab1/>} />
+          <Route path="*" element={<NotFound/>} />
+        </Route>
       </Routes>
     </div>
   );
