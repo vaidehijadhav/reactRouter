@@ -32,6 +32,7 @@ function App() {
       
       <Routes>
         <Route path="/" element={<MainHeader/>}>
+          {/* Default Element */}
           <Route index element={<Home />} />
           <Route path="/support" element={<Support />} />
           <Route path="/about" element={<About />} />
