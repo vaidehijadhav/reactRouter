@@ -5,11 +5,30 @@ import Support from './components/Support';
 import About from './components/About';
 import Lab1 from './components/Lab1';
 import NotFound from './components/NotFound';
+import {Link, NavLink} from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
+
+      <nav> 
+        <ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/support">Support</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/labs">Labs</NavLink>
+          </li>
+        </ul>
+      </nav>
+      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/support" element={<Support />} />
